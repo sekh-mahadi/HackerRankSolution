@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static java.lang.Math.*;
 
-public class Day03_Operators {
+public class Day02_Operators {
     // Complete the solve function below.
     static void solve(double meal_cost, int tip_percent, int tax_percent) {
 
