@@ -83,6 +83,8 @@ public class DynamicArray {
 		List<Integer> result = DynamicArray.dynamicArray(n, queries);
 		System.out.println(result);
 		bw.write(result.stream().map(Object::toString).collect(Collectors.joining(", ")));
+		br.close();
+		bw.close();
 
 	}
 }
