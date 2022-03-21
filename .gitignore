@@ -1,6 +1,7 @@
 #Ignore File And Folder
 
-/target/
+target/
+*/target/**
 .settings
 .classpath
 .project
