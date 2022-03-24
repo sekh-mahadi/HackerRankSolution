@@ -1,4 +1,4 @@
-package Easy;
+package Easy.LinkedLists;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

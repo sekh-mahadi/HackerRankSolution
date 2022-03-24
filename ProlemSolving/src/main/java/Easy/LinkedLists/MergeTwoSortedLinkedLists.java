@@ -1,4 +1,4 @@
-package Easy;
+package Easy.LinkedLists;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -26,6 +26,7 @@ public class MergeTwoSortedLinkedLists {
 
 		public void insertNode(int data) {
 			LinkedListNode node = new LinkedListNode(data);
+			
 			if (this.head == null) {
 				this.head = node;
 			} else {

@@ -1,11 +1,11 @@
-package Easy;
+package Easy.LinkedLists;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-import Easy.MergeTwoSortedLinkedLists.LinkedListNode;
+import Easy.LinkedLists.MergeTwoSortedLinkedLists.LinkedListNode;
 
 public class LinkedListNodeValue {
 
@@ -52,8 +52,10 @@ public class LinkedListNodeValue {
 				count++;
 				// current =current.next;
 			}
-			count -= positionFromTail;
-			while (--count > 0) {
+			/*
+			 * count -= positionFromTail; while (--count > 0) { llist = llist.next; }
+			 */
+			while(--count > positionFromTail) {
 				llist = llist.next;
 			}
 			return llist.data;
