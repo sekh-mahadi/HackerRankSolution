@@ -65,12 +65,12 @@ public class LeftRotation {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new FileWriter(System.getenv("LEFT_ROTATION")));
-		String[] firstMultipleInput = br.readLine().replaceAll("\s$", "").split(" ");
+		String[] firstMultipleInput = br.readLine().replaceAll("\\s$", "").split(" ");
 
 		int n = Integer.parseInt(firstMultipleInput[0]);
 		int d = Integer.parseInt(firstMultipleInput[1]);
 
-		List<Integer> arr = Stream.of(br.readLine().replaceAll("\s$", "").split(" ")).map(Integer::parseInt)
+		List<Integer> arr = Stream.of(br.readLine().replaceAll("\\s$", "").split(" ")).map(Integer::parseInt)
 				.collect(Collectors.toList());
 
 		List<Integer> result = LeftRotation.leftRotation_3rd(d, arr);
