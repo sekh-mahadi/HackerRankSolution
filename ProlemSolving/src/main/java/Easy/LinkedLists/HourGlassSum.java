@@ -82,7 +82,7 @@ public class HourGlassSum {
 
 		IntStream.range(0, 6).forEach(i -> {
 			try {
-				arrList.add(Stream.of(br.readLine().replaceAll("\s+$", "").split(" ")).map(Integer::parseInt)
+				arrList.add(Stream.of(br.readLine().replaceAll("\\s+$", "").split(" ")).map(Integer::parseInt)
 						.collect(Collectors.toList()));
 			} catch (IOException ex) {
 				throw new RuntimeException(ex);
