@@ -5,6 +5,6 @@
 *.settings
 *.classpath
 *.project
-.factorypath
+*.factorypath
 *.class
 *.properties
