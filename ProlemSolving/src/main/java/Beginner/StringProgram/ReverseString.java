@@ -49,15 +49,17 @@ public class ReverseString {
 		// return result;
 	}
 	
-	static public String reverStringUsingRLO(String str) {
-		return "\u202E"+str;
-	}
-
+	
 	private static void SwapString(char[] result, int len, int i) {
 		char temp = result[i];
 		result[i] = result[len];
 		result[len] = temp;
 	}
+	
+	// Method to reverse a string in Java by Unicode
+		static public String reverStringUsingRLO(String str) {
+			return "\u202E"+str;
+		}
 
 	// 3rd Method: Using StringBuilder
 	static public String ReverseStringUsingStringBuilder(String str) {
